@@ -160,6 +160,7 @@ class Leaves extends CI_Controller {
               $last_comment=$comments_item;
             } else if($comments_item->type == "change"){
               $comments_item->status = $this->status_model->getName($comments_item->status_number);
+              //$comments_item->author = $this->users_model->getName($data['leave']['changed_by']);
             }
           }
         }

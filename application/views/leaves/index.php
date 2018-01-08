@@ -130,7 +130,7 @@
                 &nbsp;
                 <?php } ?>
                 <?php if ($showCancel == TRUE) { ?>
-                    <a href="<?php echo base_url();?>leaves/cancellation/<?php echo $leave['id']; ?>" title="<?php echo lang('leaves_index_thead_tip_cancel');?>"><i class="fa fa-undo" style="color:black;"></i></a>
+                    <a href="<?php echo base_url();?>leaves/cancellation/<?php echo $leave['id']; ?>" onclick="return confirm('Etes vous sur de vouloir supprimer cette demande ?');" title="<?php echo lang('leaves_index_thead_tip_cancel');?>"><i class="fa fa-undo" style="color:black;"></i></a>
                     &nbsp;
                 <?php } ?>
                 <?php if ($showCancelByUser == TRUE) { ?>

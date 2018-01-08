@@ -107,6 +107,7 @@ switch ($leave['status']) {
           case 3: echo "<span class='label label-success'>" . lang($comments_item->status) . "</span>"; break;
           default: echo "<span class='label label-important' style='background-color: #ff0000;'>" . lang($comments_item->status) . "</span>"; break;
         }
+	//echo "(by $comments_item->author )";
         echo "    </h6>";
         echo "  </div>";
         echo "</div>";

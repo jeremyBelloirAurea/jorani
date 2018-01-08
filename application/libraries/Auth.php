@@ -221,7 +221,7 @@ class Auth {
             case 'department_calendar' :
               return ($this->CI->config->item('disable_department_calendar') == FALSE);
             case 'organization_calendar' :
-                return ($this->isHR || $this->isAdmin || ($this->CI->config->item('hide_global_cals_to_users') == FALSE));
+                return ($this->isHR || $this->isAdmin || $this->isManager || ($this->CI->config->item('hide_global_cals_to_users') == FALSE));
             case 'download_calendar' :
                 return true;
                 break;
